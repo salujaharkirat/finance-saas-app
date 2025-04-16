@@ -8,6 +8,13 @@
       "when": 1744726323201,
       "tag": "0000_talented_hercules",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1744785628935,
+      "tag": "0001_unusual_rocket_racer",
+      "breakpoints": true
     }
   ]
 }
