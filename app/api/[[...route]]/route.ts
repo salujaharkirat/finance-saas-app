@@ -18,6 +18,7 @@ app.onError((error, ctx) => {
     }, 500);
 })
 
+//eslint-disable-next-line
 const routes = app
     .route("/accounts", accounts);
 

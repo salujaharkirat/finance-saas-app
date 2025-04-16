@@ -39,6 +39,7 @@ export function DataTable<TData, TValue>({
   columns,
   data,
   filterKey,
+  //eslint-disable-next-line
   onDelete,
   disabled,
 }: DataTableProps<TData, TValue>) {
