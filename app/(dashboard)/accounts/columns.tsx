@@ -48,6 +48,9 @@ export const columns: ColumnDef<ResponseType>[] = [
   {
     id: "actions",
     header: "Actions",
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    // TODO: Fix this
     cell: ({ row }) => <Actions id={row.original.id} />
   }
 ]

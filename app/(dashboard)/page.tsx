@@ -20,7 +20,7 @@ export default function Home() {
         <>
             <Button onClick={onOpen}>Add</Button>
                 <div>
-            {accountsQuery.data?.map((account) => (
+                {accountsQuery.data?.data?.map((account) => (
                 <div key={account.id}>
                     {account.name}
                 </div>

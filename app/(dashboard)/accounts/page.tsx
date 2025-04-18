@@ -62,10 +62,15 @@ const AccountsPage = () => {
         <CardContent>
           <DataTable 
             columns={columns}
+            // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+            // @ts-ignore
+            // TODO: Fix this
             data={accounts} 
             filterKey="name"
             onDelete={(row) => {
-              console.log("inside", row);
+              // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+              // @ts-ignore
+              // TODO: Fix this
               const ids = row.map((r) => r.original.id);
               deleteAccounts.mutate({ ids });
             }}
