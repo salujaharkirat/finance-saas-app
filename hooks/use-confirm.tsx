@@ -38,8 +38,6 @@ export const useConfirm = (
     handleClose();
   }
 
-  console.log("promise", promise);
-
   const ConfirmationDialog = () => {
     return (
       <Dialog open={promise!==null}>
