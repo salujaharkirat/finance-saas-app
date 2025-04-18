@@ -1,6 +1,7 @@
 import { Hono } from "hono";
 import { handle } from "hono/vercel";
 import accounts from "./accounts";
+import categories from "./categories";
 import { HTTPException } from "hono/http-exception";
 
 
@@ -20,7 +21,8 @@ app.onError((error, ctx) => {
 
 //eslint-disable-next-line
 const routes = app
-    .route("/accounts", accounts);
+    .route("/accounts", accounts)
+    .route("/categories", categories);
 
 
 export const GET = handle(app);
