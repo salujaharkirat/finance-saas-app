@@ -9,7 +9,7 @@ A modern full-stack SaaS finance dashboard application built with the latest tec
 🌐 [Live Demo](https://finance-saas-app-edjb.vercel.app)
 
 ## Credits 
-📺 [Watch on YouTube](https://www.youtube.com/watch?v=N_uNKAus0II) _(Replace with actual link)_
+📺 [Watch on YouTube](https://www.youtube.com/watch?v=N_uNKAus0II)
 
 ---
 
@@ -37,7 +37,7 @@ A modern full-stack SaaS finance dashboard application built with the latest tec
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/finance-saas.git
+git clone https://github.com/salujaharkirat/finance-saas.git
 cd finance-saas
 ```
 
