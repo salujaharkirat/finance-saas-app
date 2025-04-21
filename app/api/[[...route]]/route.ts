@@ -3,6 +3,7 @@ import { handle } from "hono/vercel";
 import accounts from "./accounts";
 import categories from "./categories";
 import { HTTPException } from "hono/http-exception";
+import transactions from "./transactions";
 
 
 export const runtime = "edge";
@@ -22,7 +23,8 @@ app.onError((error, ctx) => {
 //eslint-disable-next-line
 const routes = app
     .route("/accounts", accounts)
-    .route("/categories", categories);
+    .route("/categories", categories)
+    .route("/transactions", transactions);
 
 
 export const GET = handle(app);
