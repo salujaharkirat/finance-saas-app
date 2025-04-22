@@ -20,7 +20,7 @@ export const useCreateTransaction = () => {
       return await response.json();
     },
     onSuccess: () => {
-      toast.success("Account created");
+      toast.success("Transaction created");
       queryClient.invalidateQueries({ queryKey: ["transactions"]})
     },
     onError: () => {
