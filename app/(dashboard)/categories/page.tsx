@@ -21,6 +21,8 @@ const CategoriesPage = () => {
   const newCategory = useNewCategory();
   const deleteCategories = useBulkDeleteCategories();
   const categoriesQuery = useGetCategories();
+  const categories = categoriesQuery.data;
+
 
   const isDisabled = categoriesQuery.isLoading || deleteCategories.isPending;
 
@@ -41,7 +43,6 @@ const CategoriesPage = () => {
     )
   }
   
-  const accounts = categoriesQuery.data?.data;
 
 
 
@@ -65,7 +66,7 @@ const CategoriesPage = () => {
             // eslint-disable-next-line @typescript-eslint/ban-ts-comment
             // @ts-ignore
             // TODO: Fix this
-            data={accounts} 
+            data={categories} 
             filterKey="name"
             onDelete={(row) => {
               // eslint-disable-next-line @typescript-eslint/ban-ts-comment

@@ -9,7 +9,7 @@ export const useGetAccounts = () => {
       if (!response.ok) {
         throw new Error("Failed to fetch accounts");
       }
-      const data = await response.json();
+      const { data } = await response.json();
       return data;
     }
   });

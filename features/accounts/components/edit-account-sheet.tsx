@@ -55,8 +55,8 @@ export const EditAccountSheet = () => {
     }
   }
 
-  const defaultValues = accountQuery.data?.data ? {
-    name: accountQuery.data?.data.name
+  const defaultValues = accountQuery.data ? {
+    name: accountQuery.data.name
   } : {
     name: "",
   };

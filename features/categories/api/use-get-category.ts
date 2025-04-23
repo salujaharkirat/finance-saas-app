@@ -11,7 +11,7 @@ export const useGetCategory = (id: string) => {
       if (!response.ok) {
         throw new Error("Failed to fetch category");
       }
-      const data = await response.json();
+      const { data } = await response.json();
       return data;
     }
   });

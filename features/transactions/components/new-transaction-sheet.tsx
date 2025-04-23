@@ -32,7 +32,7 @@ export const NewTransactionSheet = () => {
   const onCreateCategory = (name: string) => categoryMutation.mutate({
     name,
   });
-  const categoryOptions = (categoriesQuery.data?.data ?? []).map((category) => ({
+  const categoryOptions = (categoriesQuery.data ?? []).map((category) => ({
     label: category.name,
     value: category.id
   }));
@@ -42,7 +42,7 @@ export const NewTransactionSheet = () => {
   const onCreateAccount = (name: string) => accountMutation.mutate({
     name,
   });
-  const accountOptions = (accountsQuery.data?.data ?? []).map((account) => ({
+  const accountOptions = (accountsQuery.data ?? []).map((account) => ({
     label: account.name,
     value: account.id
   }));

@@ -62,7 +62,7 @@ const app = new Hono()
       )
     )
     .orderBy(desc(transactions.date))
-    return ctx.json({data});
+    return ctx.json({ data });
 })
 .get(
   "/:id",
@@ -201,6 +201,8 @@ const app = new Hono()
       });
     }
 
+
+
     const transactionIdToUpdate = db.$with("transaction_to_update").as(
       db
         .select({ id: transactions.id })
@@ -220,14 +222,17 @@ const app = new Hono()
         )
     );
 
+
     const [data] = await db
     .with(transactionIdToUpdate)
     .update(transactions)
     .set(values)
     .where(
-      eq(transactions.id, sql`(select id from ${transactionIdToUpdate})` )
+      inArray(transactions.id,  sql`(select id from ${transactionIdToUpdate})`)
     )
     .returning();
+
+
 
 
     if (!data) {
@@ -258,7 +263,6 @@ const app = new Hono()
       });
     }
 
-
     const transactionIdToDelete = db.$with("transaction_to_delete").as(
       db
         .select({ id: transactions.id })
@@ -283,7 +287,7 @@ const app = new Hono()
       .with(transactionIdToDelete)
       .delete(transactions)
       .where(
-        eq(transactions.id, eq(transactions.id, sql`(select id from ${transactionIdToDelete})`))
+        inArray(transactions.id,  sql`(select id from ${transactionIdToDelete})`)
       )
       .returning({
         id: transactions.id,

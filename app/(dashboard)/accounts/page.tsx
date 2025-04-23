@@ -21,6 +21,7 @@ const AccountsPage = () => {
   const newAccount = useNewAccount();
   const deleteAccounts = useBulkDeleteAccounts();
   const accountsQuery = useGetAccounts();
+  const accounts = accountsQuery.data;
 
   const isDisabled = accountsQuery.isLoading || deleteAccounts.isPending;
 
@@ -41,9 +42,6 @@ const AccountsPage = () => {
     )
   }
   
-  const accounts = accountsQuery.data?.data;
-
-
 
   return (
     <div className="max-w-screen-2xl mx-auto w-full pb-10 -mt-24">

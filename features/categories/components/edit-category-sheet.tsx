@@ -56,8 +56,8 @@ export const EditCategorySheet = () => {
     }
   }
 
-  const defaultValues = categoryQuery.data?.data ? {
-    name: categoryQuery.data?.data.name
+  const defaultValues = categoryQuery.data ? {
+    name: categoryQuery.data.name
   } : {
     name: "",
   };
