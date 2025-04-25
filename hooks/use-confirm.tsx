@@ -20,7 +20,6 @@ export const useConfirm = (
     void } | null>(null);
   
   const confirm = () => new Promise((resolve) => {
-    console.log("inside confirm");
     setPromise({ resolve });
   });
 
