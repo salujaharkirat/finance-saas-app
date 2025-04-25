@@ -89,9 +89,7 @@ export function DataTable<TData, TValue>({
             variant="outline"
             className="ml-auto font-normal text-xs"
             onClick={async () => {
-              console.log("clicked");
               const ok = await confirm();
-              console.log("inside", ok);
               if (ok) {
                 onDelete(table.getFilteredSelectedRowModel().rows);
                 table.resetRowSelection();

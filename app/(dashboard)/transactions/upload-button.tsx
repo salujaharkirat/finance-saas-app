@@ -4,6 +4,7 @@ import { useCSVReader } from "react-papaparse";
 import { Button } from "@/components/ui/button";
 
 type Props = {
+  /* eslint-disable @typescript-eslint/no-explicit-any */
   onUpload: (results: any) => void;
 }
 
