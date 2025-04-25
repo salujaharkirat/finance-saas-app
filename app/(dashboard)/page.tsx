@@ -1,3 +1,4 @@
+import { DataCharts } from "@/components/data-charts";
 import { DataGrid } from "@/components/data-grid";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -9,6 +10,7 @@ const DashboardInnerPage = () => {
     return (
         <div className="max-w-screen-2xl mx-auto w-full pb-10 -mt-24">
             <DataGrid />
+            <DataCharts />
         </div>
     )
 }
