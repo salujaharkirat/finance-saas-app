@@ -65,6 +65,8 @@ NEXT_PUBLIC_APP_URL=http://localhost:3000
 ```
 bun run db:generate #generate migration 
 bun run db:apply #run migration
+bun run db:studio #run drizzle studio
+bun run db:seed #initialize with seed transactions
 ```
 
 ## 🙌 Acknowledgments 
