@@ -1,4 +1,4 @@
-# 🚀 Finance SaaS – Full Stack Finance Dashboard with Subscriptions
+# 💸 Finance SaaS – Full Stack Finance Dashboard with Subscriptions
 
 A modern full-stack SaaS finance dashboard application built with the latest tech stack. This project allows users to manage financial records, visualize data with interactive charts, and subscribe to premium plans using Stripe.
 
