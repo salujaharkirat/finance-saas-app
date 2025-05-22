@@ -8,9 +8,6 @@ A modern full-stack SaaS finance dashboard application built with the latest tec
 
 🌐 [Live Demo](https://finance-saas-app-edjb.vercel.app)
 
-## Credits 
-📺 [Watch on YouTube](https://www.youtube.com/watch?v=N_uNKAus0II)
-
 ---
 
 ## ⚙️ Tech Stack
